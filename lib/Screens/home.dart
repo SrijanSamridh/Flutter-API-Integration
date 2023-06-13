@@ -1,7 +1,7 @@
-import 'package:api_integration/models/post.dart';
 import 'package:flutter/material.dart';
 
-import '../services/remote_services.dart';
+import '../API/models/post.dart';
+import '../API/services/remote_services.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
