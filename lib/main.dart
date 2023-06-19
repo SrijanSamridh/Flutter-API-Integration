@@ -1,4 +1,5 @@
 // import 'package:api_integration/Screens/home.dart';
+import 'package:api_integration/Screens/call_screen.dart';
 import 'package:api_integration/Screens/test_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -18,7 +19,11 @@ class MyApp extends StatelessWidget {
       theme: ThemeData.dark(
         useMaterial3: true,
       ),
-      home: const TestScreen(),
+      initialRoute: '/call',
+      routes: {
+        '/test': (context) => const TestScreen(),
+        '/call': (context) => const CallScreen(),
+      },
       debugShowCheckedModeBanner: false,
     );
   }

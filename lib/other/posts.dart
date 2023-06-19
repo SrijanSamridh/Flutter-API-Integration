@@ -28,11 +28,10 @@ class Post {
         body: json["body"],
     );
 
-    Map<dynamic, dynamic> toJson() => {
+    Map<String, dynamic> toJson() => {
         "userId": userId,
         "id": id,
         "title": title,
         "body": body,
     };
-    
 }
