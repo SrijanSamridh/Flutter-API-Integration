@@ -29,7 +29,7 @@ Future<String> login() async {
   
 
 
-  debugPrint(csrfToken);
+  // debugPrint(csrfToken);
   debugPrint(response.headers['set-cookie']!.split(';')[4].split('=')[2]);
   return response.headers['set-cookie']!.split(';')[4].split('=')[2];
 }

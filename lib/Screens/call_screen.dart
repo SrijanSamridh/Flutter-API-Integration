@@ -57,9 +57,9 @@ class _CallScreenState extends State<CallScreen> {
                     .catchError((err) {});
                 if (response == null) return;
                 setState(() {
-                  data = "Successful Request: \n$response";
+                  data =
+                      "Successful Request: \n$response \n ${login().toString()}";
                 });
-                login();
               }),
           AppButton(
               color: Colors.orange,
@@ -83,7 +83,7 @@ class _CallScreenState extends State<CallScreen> {
               }),
           AppButton(
               color: Colors.red,
-              text: 'Del',
+              text: 'Delete',
               icon: Icons.delete,
               onPressed: () async {
                 var id = 1;
