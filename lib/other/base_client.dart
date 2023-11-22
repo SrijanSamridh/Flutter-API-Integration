@@ -5,7 +5,7 @@ import 'dart:convert';
 import 'package:http/http.dart' as http;
 
 const String baseUrl = 'https://jsonplaceholder.typicode.com';
-// const String baseUrl = 'https://hanuven.vercel.app/api/auth/phonenumber';
+// const String baseUrl = 'https://hanuven.vercel.app/api';
 
 class BaseClient {
   var client = http.Client();
