@@ -4,6 +4,8 @@ import 'package:api_integration/Screens/test_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'Screens/home.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -21,6 +23,7 @@ class MyApp extends StatelessWidget {
       ),
       initialRoute: '/call',
       routes: {
+        '/home': (context) => const HomeScreen(),
         '/test': (context) => const TestScreen(),
         '/call': (context) => const CallScreen(),
       },
